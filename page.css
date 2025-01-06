@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    inherits: none;
+    font-family: epilogue;
+}
+
+body {
+    width: 100%;
+    background-color:  hsl(0, 0%, 98%);
+}
+
+header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 15px 15px 0 15px
+}
+
+header .nav1,.nav2 {
+    padding: 0;
+}
+
+.logo {
+    font-weight: 500;
+    font-size: 25px;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 12px;
+}
+
+header a:hover {
+    color: hsl(0, 0%, 41%);
+}
+
+header ul {
+    list-style-type: none;
+}
+
+.nav1 {
+    display: flex;
+    gap: 4rem;
+    position: relative;
+}
+
+.nav1-remain .four-nav {
+    display: flex;
+    gap: 30px;
+}
+
+.together {
+    display: flex;
+    gap: 10px;
+}
+
+
+
+.nav2 {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.nav2 h1 {
+    font-size: 14px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.drop-down {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius:10px;
+    border: 1px solid white;
+    box-shadow:2px 3px 3px 5px rgb(0, 0, 0,0.1) ;
+    line-height: 1.8rem;
+    margin-top: 15px;
+    z-index: 99;
+    display:none;
+    position: absolute;
+    
+}
+
+
+.drop-down ul li:hover {
+    width: 100%;
+}
+
+.nav1  .four-nav >li:hover .drop-down{
+    display: block;
+
+}
+
+button {
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.arrow-up {
+    display: none;
+}
+
+.nav1 .four-nav >li:hover .arrow-up {
+    display: inline;
+}
+
+.nav1 .four-nav >li:hover .arrow-down {
+    display: none;
+}
+
+main {
+    display: flex;
+    gap: 15px;
+    margin-top: 7%;
+    margin-right: 7%;
+    margin-left: 10%;
+    margin-bottom: 15%;
+}
+
+main .hero-sec-word {
+    margin-top:5%;
+
+}
+
+main .hero-sec-word h1 {
+    font-size: 4rem;
+    width: 100%;
+}
+
+img{
+    width: 550px;
+    height: 500px;
+    margin-bottom: 20%;
+}
+
+main .hero-paragraph {
+    margin-top: 30px;
+    font-size: 18px;
+    width: 88%;
+    line-height: 1.5rem;
+    color: hsl(0, 0%, 41%)
+}
+
+main button {
+    background-color: #000000;
+    padding:12px 27px;
+    color: white;
+    border: 1px solid black;
+    margin-top: 25px;
+    font-size: 12px;
+}
+
+.bottom-icon {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 10%;
+}
+
+@media (max-width:485px) {
+
+main {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-left: 15%;
+    
+    
+}
+
+.hero-heading  {
+    width: 100%;
+
+
+    
+     
+    
+}
+
+}
+
+
+
+
+
