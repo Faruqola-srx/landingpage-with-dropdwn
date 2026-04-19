@@ -6,15 +6,20 @@
 }
 
 body {
-    width: 100%;
     background-color:  hsl(0, 0%, 98%);
 }
 
 header {
-    display: flex;
-    justify-content:space-between;
+    display:flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+    margin-left: 25px;
+    margin-top: 10px;
     align-items: center;
-    margin: 15px 15px 0 15px
+    max-width:1119px;
+    min-width: 600px;
+    width: 100%;
+    position: relative;
 }
 
 header .nav1,.nav2 {
@@ -45,6 +50,7 @@ header ul {
     display: flex;
     gap: 4rem;
     position: relative;
+    align-items: center;
 }
 
 .nav1-remain .four-nav {
@@ -55,6 +61,7 @@ header ul {
 .together {
     display: flex;
     gap: 10px;
+
 }
 
 
@@ -63,6 +70,7 @@ header ul {
     display: flex;
     gap: 15px;
     align-items: center;
+
 }
 
 .nav2 h1 {
@@ -124,30 +132,38 @@ main {
     margin-right: 7%;
     margin-left: 10%;
     margin-bottom: 15%;
+    max-width: 1300px;
+    min-height: 648px;
+    width: 100%;
+    flex-wrap: wrap-reverse;
 }
 
 main .hero-sec-word {
     margin-top:5%;
+    
 
 }
 
 main .hero-sec-word h1 {
     font-size: 4rem;
     width: 100%;
+    max-width: 70%;
+    
 }
 
 img{
-    width: 550px;
+    width: 500px;
     height: 500px;
     margin-bottom: 20%;
+
 }
 
 main .hero-paragraph {
     margin-top: 30px;
     font-size: 18px;
-    width: 88%;
+    max-width:491px;
     line-height: 1.5rem;
-    color: hsl(0, 0%, 41%)
+    color: hsl(0, 0%, 41%);
 }
 
 main button {
@@ -166,27 +182,86 @@ main button {
     margin-top: 10%;
 }
 
-@media (max-width:485px) {
+header .icon-menu {
+    display: none;
+    width: 20px;
+    height: 20px;
+    
+    
+}
 
-main {
+header .icon-close {
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+
+ header .two-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+ }
+
+@media (max-width:675px) {
+    header .icon-menu {
+        display: block;
+    }
+
+.nav1-remain .four-nav {
+    display: flex;
+    gap: 30px;
     flex-direction: column;
-    align-items: center;
+}
+    
+
+header .two-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 250px;
+    align-items: flex-end;
+    height: 100vh;
+    min-width: 612px;
+    min-height: 1200px;
+    margin-top: 3rem;
+}
+
+header .two-nav.active {
+    display: flex;
+  }
+
+  main .hero-sec-word {
     width: 100%;
-    padding-left: 15%;
+  }
+
+  main .hero-sec-word h1 {
+    min-width: 680px;
+  }
+
+  main .hero-sec-word button {
+    margin:auto;
+    margin-top: 20px;
+    padding: 30px;
     
+  }
+
+  main .hero-sec-word .hero-paragraph {
+    max-width: 480px;
+    font-size: 1.5rem;
+    min-width: 538px;
+    line-height: 2.5rem;
+  }
+
+   main .hero-sec-word .bottom-icon {
     
+   }
+   
 }
 
-.hero-heading  {
-    width: 100%;
 
 
-    
-     
-    
-}
-
-}
 
 
 
